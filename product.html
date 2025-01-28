@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!--tailwind css cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+    <!--Responsive navbar -->
+    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg class="fill-current text-black w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline  hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!--best seller section-->
+    <section class="p-4 text-center">
+        <h1 class="font-bold mt-5 text-3xl">Our Products</h1>
+        <input class="border border-black m-3 p-2" style="width: 80%;" type="text"
+            placeholder="Search for a Products..."><br>
+        <div class="grid grid-cols-2 mt-10 gap-5 md:grid-cols-4">
+            <div>
+                <img src="./images/img__1.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Rose Plants</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/img__2.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Lily Plants</h1>
+                <p>$30</p>
+            </div>
+            <div>
+                <img src="./images/img__3.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Hibiscus Plants</h1>
+                <p>$15</p>
+            </div>
+            <div>
+                <img src=" ./images/img__4.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Croton Plants</h1>
+                <p>$35</p>
+            </div>
+            <div>
+                <img src="./images/img__5.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>White Tulips Plants</h1>
+                <p>$150</p>
+            </div>
+            <div>
+                <img src="./images/img__6.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Holy Basil Plants</h1>
+                <p>$200</p>
+            </div>
+            <div>
+                <img src="./images/img__7.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Rustic Floral Plants</h1>
+                <p>$500</p>
+            </div>
+            <div>
+                <img src=" ./images/img__8.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Bougainvillea Plants</h1>
+                <p>$350</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="p-4 mt-10 bg-green-200">
+        <h1 class="font-bold mt-5 text-4xl">Greenden</h1>
+        <p class="mt-3">The Standard chunk of Lorem used since the 1500's is reprodused below for those interest</p>
+        <p class="mt-3 ">&copy; 2021 Greenden.com</p>
+    </section>
+</body>
+</html>
