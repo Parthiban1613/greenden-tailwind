@@ -14,14 +14,14 @@
     <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg class="fill-current text-black w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <svg id="menuicon" class="fill-current text-black w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
         </svg>
-        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <ul class=" gap-5 text-gray-600 hidden md:flex">
             <li>
-                <a class="hover:underline  hover:text-black" href="#">Home</a>
+                <a class="hover:underline  hover:text-black" href="index.html">Home</a>
             </li>
             <li>
                 <a class="hover:underline  hover:text-black" href="product.html">Products</a>
@@ -31,6 +31,23 @@
             </li>
         </ul>
     </nav>
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+            <li>
+                <a class="hover:underline  hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
     <!--header section-->
     <section class="bg-green-200 p-4 md:p-10  flex justify-center">
         <div>
@@ -152,6 +169,7 @@
         <p class="mt-3">The Standard chunk of Lorem used since the 1500's is reprodused below for those interest</p>
         <p class="mt-3 ">&copy; 2021 Greenden.com</p>
     </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
